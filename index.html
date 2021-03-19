@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Full Stack Web Developer Profile">
+    <meta name="keywords"
+        content="Full Stack Web Developer, Front End Developer, Backend Developer, Application Maintanance and Support, Software Testing">
+    <script SameSite="none" src="https://kit.fontawesome.com/4686fc24da.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Saurabh Burman - Web Developer Profile</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="topnav" id="topnavId">
+            <a href="#home" class="active navlink" onclick="toggleNav(event)">Home</a>
+            <a href="#about" class="navlink" onclick="toggleNav(event)">About</a>
+            <a href="#projects" class="navlink" onclick="toggleNav(event)">Projects</a>
+            <a href="#contact" class="navlink" onclick="toggleNav(event)">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav(event)">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <a class="resumeLink" href="./media/Saurabh Burman Resume.pdf" title="Download Resume" target="_blank"><img
+            src="./media/images/resume-icon-png.jpg" alt=""></a>
+
+    <a href="#home" id="arrow-up" class="arrow-button">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+
+    <!-- HOME Section -->
+    <section id="home">
+
+        <!-- Overlay -->
+        <div id="home-overlay"></div>
+
+        <!-- Background Video -->
+        <video id="bg-video" poster="media/images/home-background.jpg" autoplay loop muted>
+            <source src="media/videos/home-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <h1 id="heading1"></h1>
+            <h2 id="heading2"></h2>
+        </div>
+
+        <div>
+            <a href="#about" id="arrow-down" class="arrow-button">
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ABOUT Section -->
+    <section id="about">
+        <p class="section-heading">ABOUT</p>
+        <div class="container about-inner">
+            <div id="about-left">
+                <img src="media/images/photograph.jpg" alt="profile-pic">
+                <div id="about-left-overlay">
+                    <div id="about-left-overlay-text">
+                        <p>Skilled in javascript frameworks.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about-right">
+                <div id="layersWrapper">
+                    <div id="layerUI"><img src="./media/images/adaptiveUI.gif" alt=""></div>
+                    <div id="layerFrontEnd"><img src="./media/images/frontend.png" alt=""></div>
+                    <div id="layerBackEnd"><img src="./media/images/backend.png" alt=""></div>
+                    <div id="layerDataBase"><img src="./media/images/db.png" alt=""></div>
+                </div>
+            </div>
+            <div id="about-bottom">
+                <div id="progress-bar">
+                    <div class="progress" id="javascript-progress">
+                        <span>Javascript</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <div class="progress" id="html5-progress">
+                        <span>Html5</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <div class="progress" id="css3-progress">
+                        <span>Css3</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <div class="progress" id="bootstrap4-progress">
+                        <span>Bootstrap4</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <div class="progress" id="nodejs-progress">
+                        <span>Nodejs</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <div class="progress" id="express-progress">
+                        <span>Express</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <div class="progress" id="mongodb-progress">
+                        <span>MongoDB</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <div class="progress" id="angular-progress">
+                        <span>Angular</span>
+                        <span class="skillRating"><span></span><span>%</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS Section -->
+
+    <section id="projects">
+        <p class="section-heading">SOME SKILL SHOWCASE</p>
+        <div id="tabs">
+            <div class="container">
+                <div class="tab-item tab-border" id="tab-1">
+                    <i class="fas fa-gamepad fa-2x"></i>
+                    <p>JS Games</p>
+                </div>
+                <div class="tab-item" id="tab-2">
+                    <i class="fab fa-css3-alt fa-2x"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tab-item" id="tab-3">
+                    <i class="fab fa-bootstrap fa-2x"></i>
+                    <p>Bootstrap4</p>
+                </div>
+                <div class="tab-item" id="tab-4">
+                    <i class="fab fa-angular fa-2x"></i>
+                    <p>Angular</p>
+                </div>
+                <div class="tab-item" id="tab-5">
+                    <i class="fab fa-node fa-2x"></i>
+                    <p>NodeJs</p>
+                </div>
+                <div class="tab-item" id="tab-6">
+                    <i class="fas fa-layer-group fa-2x"></i>
+                    <p>MEAN Stack</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-content">
+            <div class="container">
+                <!-- Tab Content 1 -->
+                <div id="tab-1-content" class="tab show">
+                    <div class="tab-content-inner">
+                        <div class="flex-item">
+                            <img src='media/images/games/solitaire-brainvita-buddhijaal-game.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Brainvita - Brain Teaser Game
+                                </div>
+                                <a href="https://burman-saurabh.github.io/brainvita/" target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <img src='media/images/games/blue-monster.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Hit The Monster
+                                </div>
+                                <a href="https://burman-saurabh.github.io/hit-the-monster/"
+                                    target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <img src='media/images/games/frogGame.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Frog Puzzle - Brain teaser Game
+                                </div>
+                                <a href="https://burman-saurabh.github.io/jumping-frog-puzzle/"
+                                    target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <img src='media/images/games/guessthecard.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Guess The Card - Multiplayer Memory Game
+                                </div>
+                                <a href="https://burman-saurabh.github.io/memory-game-guess-the-card-multiplayer/"
+                                    target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <img src='media/images/games/coloredblockgame.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Guess The Blocks - Memory Game
+                                </div>
+                                <a href="https://burman-saurabh.github.io/memory-game-guess-the-colored-blocks/"
+                                    target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <img src='media/images/games/snakeGame.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Snake Game
+                                </div>
+                                <a href="https://burman-saurabh.github.io/snake-game/"
+                                    target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <img src='media/images/games/josephusProblem.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Guess the Survivor - The famous Josephus Problem
+                                </div>
+                                <a href="https://burman-saurabh.github.io/the-josephus-problem-game/"
+                                    target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <img src='media/images/games/ticTacToe.jpg'>
+                            <div class="overlay">
+                                <div class="title">
+                                    Tic Tac Toe
+                                </div>
+                                <a href="https://burman-saurabh.github.io/tic-tac-toe/"
+                                    target="SingleSecondaryWindowName"
+                                    onclick="openRequestedSinglePopup(this.href); return false;">Play</a>
+                                <!-- <img src=''> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content 2 -->
+                <div id="tab-2-content" class="tab">
+                    <div class="tab-content-inner">
+
+                    </div>
+                </div>
+
+                <!-- Tab Content 3 -->
+                <div id="tab-3-content" class="tab">
+                    <div class="tab-content-inner">
+
+                    </div>
+                </div>
+                <!-- Tab Content 4 -->
+                <div id="tab-4-content" class="tab">
+                    <div class="tab-content-inner">
+
+                    </div>
+                </div>
+                <!-- Tab Content 5 -->
+                <div id="tab-5-content" class="tab">
+                    <div class="tab-content-inner">
+
+                    </div>
+                </div>
+                <!-- Tab Content 6 -->
+                <div id="tab-6-content" class="tab">
+                    <div class="tab-content-inner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT Section -->
+    <section id="contact">
+        <p class="section-heading">CONTACT</p>
+        <div class="container">
+            <form onsubmit="sendEmail(this, event)">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <div class="errorMsg">
+                    <p>Please Enter all the fields before sending the email.</p>
+                </div>
+
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER Section -->
+    <footer id="footer">
+        <div id="social-media">
+            <a href="#" target="_blank">
+                <div class="social-icon" id="icon-1">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/saurabh5989/" target="_blank">
+                <div class="social-icon" id="icon-2">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="social-icon" id="icon-3">
+                    <i class="fab fa-github fa-2x"></i>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="social-icon" id="icon-4">
+                    <i class="fab fa-codepen fa-2x"></i>
+                </div>
+            </a>
+        </div>
+        <p>Copyright &copy; <span id="year"></span></p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
