@@ -32,10 +32,15 @@
     <a class="resumeLink" href="./media/Saurabh Burman Resume.pdf" title="Download Resume" target="_blank"><img
             src="./media/images/resume-icon-png.jpg" alt=""></a>
 
+    <a class="covid19Link" title="Covid19 Statistics" onclick="showCovidScreen()" href="">
+        <div
+            style="background: url('./media/images/covid19.gif'); height: 100%; width: 100%; background-position: 45% 50%; background-size: cover; background-repeat: no-repeat; border-radius: 50%">
+        </div>
+    </a>
+
     <a href="#home" id="arrow-up" class="arrow-button">
         <i class="fa fa-angle-up"></i>
     </a>
-
 
     <!-- HOME Section -->
     <section id="home">
@@ -364,10 +369,47 @@
         <p>Copyright &copy; <span id="year"></span></p>
     </footer>
 
+    <!-- Covid19 container -->
+    <div class="chart-container">
+        <div id="loading">Loading...</div>
+
+        <div class="closeCovidScreen" onclick="hideChartContainer()">X</div>
+
+        <div class="casesFilter">
+            <select name="caseType" id="caseTypeId" class="covidCanvas" onchange="updateChart()">
+                <option value="allCases" selected>All Cases</option>
+                <option value="newCases">New Cases</option>
+            </select>
+
+            <select name="timeRange" id="timeRangeId" class="covidCanvas" onchange="updateChart()">
+                <option value="allTime" selected>All Time</option>
+                <option value="7">1 week</option>
+                <option value="14">2 weeks</option>
+                <option value="30">30days</option>
+                <option value="90">3 months</option>
+            </select>
+
+            <select name="country" id="countryId" class="covidCanvas" onchange="updateChart()">
+                <option value="india" selected>Worldwide</option>
+            </select>
+
+        </div>
+
+        <div class="canvasWrapper">
+            <canvas id="myChartLine" class="covidCanvas"></canvas>
+        </div>
+        <!-- <canvas id="myChartBar"></canvas> -->
+        <!-- <canvas id="myChartDoughnut"></canvas> -->
+
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script async src="js/covidScript.js"></script>
+
 
 </body>
 

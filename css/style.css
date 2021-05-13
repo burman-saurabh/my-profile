@@ -132,13 +132,12 @@ header {
 .resumeLink {
     display: inline-block;
     background-color: var(--secondary-color);
-    transition: all 0.3s;
     border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
     padding: 5px;
     position: fixed;
-    right: -30px;
+    right: -20px;
     top: 100px;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -154,6 +153,35 @@ header {
     animation: none !important;
     height: 6rem;
     width: 6rem;
+    right: 5px;
+}
+
+/* Covid19 link */
+
+.closeCovidScreen{
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.covid19Link {
+    display: inline-block;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    padding: 5px;
+    position: fixed;
+    right: -20px;
+    top: 200px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.covid19Link:hover {
+    height: 8rem;
+    width: 8rem;
     right: 5px;
 }
 
@@ -663,6 +691,54 @@ footer p {
 .social-icon:hover {
     transform: translateY(-5px);
     color: var(--secondary-color-hover);
+}
+
+
+/* Covid19 */
+
+.chart-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.casesFilter {
+    border: #777;
+    width: 70%;
+    margin: auto;
+}
+
+.canvasWrapper {
+    width: 70%;
+    margin: auto;
+}
+
+canvas.covidCanvas {
+    margin-top: 3rem;
+    background-color: whitesmoke;
+    visibility: hidden;
+    box-shadow: 2px 2px 4px #222, -2px -2px 4px #222;
+}
+
+select.covidCanvas {
+    width: auto;
+    padding: 8px 12px;
+    height: 32px;
+    border-radius: 20px;
+    margin-right: 5px;
 }
 
 /* MEDIA Query */
