@@ -7,12 +7,9 @@ function showCovidScreen() {
 }
 
 function hideChartContainer() {
-    // console.log('xxxxxxxxxxxxx');
     let el = document.getElementsByClassName('chart-container')[0];
     el.style.display = 'none';
 }
-
-// populateCountryDropdown();
 
 function populateCountryDropdown() {
     fetch("https://api.covid19api.com/countries", {
