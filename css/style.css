@@ -722,7 +722,7 @@ footer p {
 }
 
 .canvasWrapper {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -810,6 +810,33 @@ select.covidCanvas {
     .flex-item {
         flex: 1 1 100%;
     }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .canvasWrapper {
+        width: 90% !important;
+        margin: auto;
+    }
+    
+    canvas.covidCanvas {
+        margin-top: 5px;
+        background-color: whitesmoke;
+        visibility: hidden;
+        box-shadow: 2px 2px 4px #222, -2px -2px 4px #222;
+        height: 70vh;
+    }
+
+    .chart-container{
+        padding: 20px 0;
+    }
+
+    select.covidCanvas{
+        display: block;
+    }
+
+
 }
 
 @keyframes headeranimation {
