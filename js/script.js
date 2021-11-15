@@ -55,7 +55,8 @@ $(document).ready(function () {
 
 
 // Main Heading animation
-let heading1 = 'Hello, I\'m Saurabh Burman';
+// let heading1 = 'Hello, I\'m Saurabh Burman';
+let heading1 = '👋 Hi, I’m Saurabh Burman';
 let heading2 = 'I\'m a full-stack web developer';
 
 // let animationDuration = 0.3;

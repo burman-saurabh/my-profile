@@ -297,6 +297,10 @@ header {
     border: solid #fff;
 }
 
+#about-left img{
+    width: 70%;
+}
+
 #about-right {
     right: -90px;
 }
