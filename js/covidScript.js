@@ -96,7 +96,7 @@ function updateChart() {
             )
             .catch(error => console.log('error', error));
     } else {
-        fetch(`https://api.covid19api.com/dayone/country/${country}`, {
+        fetch(`https://api.covid19api.com/dayone/country/${country}`, { 
                 method: 'GET',
                 // headers: myHeaders,
                 redirect: 'follow'
@@ -203,7 +203,7 @@ function createCharts(timeRange, caseType) {
         };
 
     } else if (caseType === 'newCases') {
-        console.log('okkkkkkkkkkkkk');
+        // console.log('okkkkkkkkkkkkk');
         let countsNewConfirmed = dataArray.map(value => {
             return value.NewConfirmed;
         });
