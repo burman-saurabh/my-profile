@@ -119,14 +119,14 @@ window.addEventListener('scroll', function () {
 
 // Hard coding the skill rating. Just changing it here reflect changes everywhere required dynamically including css vars.
 let skillMap = new Map();
-skillMap.set('javascript-progress', 85);
-skillMap.set('html5-progress', 85);
+skillMap.set('javascript-progress', 90);
+skillMap.set('html5-progress', 90);
 skillMap.set('css3-progress', 90);
 skillMap.set('bootstrap4-progress', 90);
 skillMap.set('nodejs-progress', 80);
-skillMap.set('express-progress', 80);
-skillMap.set('mongodb-progress', 75);
-skillMap.set('angular-progress', 80);
+skillMap.set('express-progress', 90);
+skillMap.set('mongodb-progress', 85);
+skillMap.set('angular-progress', 85);
 
 // Dynamically setting the css variables for the skill ratings.
 let root = document.documentElement;
